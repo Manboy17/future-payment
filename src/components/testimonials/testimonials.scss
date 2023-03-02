@@ -1,0 +1,125 @@
+.testimonials {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    max-width: 1375px;
+
+    .upper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 129px;
+
+      @media (max-width: 1150px) {
+        flex-direction: column;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 170%;
+
+        color: #ffffff;
+
+        @media (max-width: 650px) {
+          font-size: 35px;
+        }
+
+        .saying {
+          background: linear-gradient(to top right, #ff47e7 0%, #33bacf 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .bottom {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 70px;
+      margin-top: 80px;
+
+      @media (max-width: 1300px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+
+      @media (max-width: 750px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+      }
+
+      .testimonial {
+        padding: 30px;
+        cursor: pointer;
+        border-radius: 20px;
+        position: relative;
+        height: 350px;
+
+        .feedback {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 180%;
+          letter-spacing: 0.02em;
+          color: #ffffff;
+          margin: 40px 0px 30px 0px;
+        }
+
+        .person {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          position: absolute;
+          bottom: 30px;
+
+          .person__info {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 32px;
+              color: #ffffff;
+            }
+
+            .founder {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: #ffffff;
+              opacity: 0.5;
+            }
+          }
+        }
+
+        &:hover {
+          background: linear-gradient(
+            144.39deg,
+            #ffffff -278.56%,
+            #6d6d6d -78.47%,
+            #11101d 91.61%
+          );
+        }
+      }
+
+      .testimonial:first-child {
+        background: linear-gradient(
+          144.39deg,
+          #ffffff -278.56%,
+          #6d6d6d -78.47%,
+          #11101d 91.61%
+        );
+      }
+    }
+  }
+}

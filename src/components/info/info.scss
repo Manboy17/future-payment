@@ -1,0 +1,48 @@
+.info {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1375px;
+    padding: 30px;
+    margin-top: 40px;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .number {
+        font-weight: 600;
+        font-size: 40.8925px;
+        line-height: 130%;
+        color: #ffffff;
+
+        @media (max-width: 650px) {
+          font-size: 30px;
+        }
+      }
+
+      .clients {
+        font-weight: 400;
+        font-size: 20.4463px;
+        line-height: 130%;
+
+        text-transform: uppercase;
+
+        @media (max-width: 650px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.payment {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1375px;
+    padding: 30px;
+
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      .bill {
+        height: 40rem;
+        margin-bottom: 100px;
+      }
+    }
+
+    .bill {
+      height: 35rem;
+
+      @media (max-width: 700px) {
+        height: 20rem;
+      }
+
+      @media (max-width: 500px) {
+        height: 13rem;
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+      flex: 1;
+
+      .title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+
+        @media (max-width: 700px) {
+          font-size: 35px;
+        }
+
+        .billing {
+          background: linear-gradient(to top right, #ff47e7 0%, #33bacf 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-transform: uppercase;
+        }
+      }
+
+      .methods {
+        display: flex;
+        justify-content: flex-start;
+        gap: 42px;
+        float: left;
+        align-self: self-start;
+      }
+    }
+  }
+}

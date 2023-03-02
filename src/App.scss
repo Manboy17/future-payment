@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00040f;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+li:hover {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.2s ease-in-out;
+}
+
+.blurry {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(225px);
+}
+
+.gradient,
+.get,
+.started,
+.clients {
+  background: linear-gradient(to top right, #ff47e7 0%, #33bacf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  border: none;
+  padding: 18px 33px;
+  width: max-content;
+  cursor: pointer;
+
+  text-transform: capitalize;
+
+  color: #00040e;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
+}
